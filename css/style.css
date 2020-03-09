@@ -1,0 +1,23 @@
+
+ul{
+    list-style-type: none;
+}
+ul li{
+    padding: 5px;
+    margin-top: 15px;
+}
+.error {
+    background-color: orangered;
+    color: white;
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+}
+
+.success{
+    background-color: green;
+    color: white;
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+}

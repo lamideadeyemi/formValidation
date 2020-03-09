@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="w-50 m-auto">
+        <!-- Default form subscription -->
+        <form id="reg" class="text-center border border-light p-5 ">
+
+            <p class="h4 mb-4">Subscribe</p>
+
+            <p>Join our mailing list. We write rarely, but only the best content.</p>
+            <div class="msg"></div>
+
+            <!-- Name -->
+            <input type="text" id="fullName" class="form-control mb-4" placeholder="Ful Name">
+            <p id="fullNameError"></p>
+
+            <!-- Email -->
+            <input type="email" id="email" class="form-control mb-4" placeholder="E-mail">
+            <p id="emailError"></p>
+
+
+            <!-- Phone Number -->
+            <input type="number" id="phoneNumber" class="form-control mb-4" placeholder="Phone Number">
+            <p id="phoneNumberError"></p>
+
+            <!-- Password -->
+            <div class="input-group mb-3">
+                <input type="password" id="password" class="form-control" placeholder="Password"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="togglePassword btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect"
+                        type="button" id="button-addon2">Show</button>
+                </div>
+            </div>
+            <p id="passwordError"></p>
+
+
+            <!-- Confirm-Password -->
+            <input type="password" id="confirmPassword" class="form-control mb-4" placeholder="Confirm Password">
+            <p id="confirmPasswordError"></p>
+
+            <!-- Sign in button -->
+            <button class="btn btn-info btn-block" type="submit">Sign in</button>
+
+            <div class="successMsg"></div>
+
+        </form>
+        <!-- User List -->
+        <ul id="list" class="bg-light mt-3"></ul>
+    </div>
+
+    <!-- <section class="container">
+        <form id="myForm">
+            <h1>Add User</h1>
+            <div class="msg"></div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Kene">
+            </div>
+            <div>
+                <label for="nickName">Nick Name:</label>
+                <input type="text" id="nickName">
+            </div>
+            <input class="btn" type="submit" value="submit">
+            <div class="successMsg"></div>
+        </form>
+    
+        <ul id="users"></ul>
+    
+    </section> -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
